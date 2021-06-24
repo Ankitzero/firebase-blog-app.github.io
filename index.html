@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-logo">Blog</div>
+        <div class="nav-links">
+            <div class="nav-links-link" id="login">Log In</div>
+            <div class="nav-links-link" id="signup">Sign Up</div>
+            <div class="dropdown">
+                <div class="nav-links-link dropbtn">Options</div>
+                <div class="dropdown-content">
+                    <div class="nav-links-link dd" id="profile">Profile</div>
+                    <div class="nav-links-link dd" id="createblog">Create Blog</div>
+                    <div class="nav-links-link dd" id="updateblog">Update Blog</div>
+                    <div class="nav-links-link dd" id="deleteblog">Delete Blog</div>
+                </div>
+              </div>
+            <div class="nav-links-link" id="logout">Log Out</div>
+        </div>
+    </div>
+    <div class="main-box">
+    </div>
+    <div class="loader"></div>
+    <div class="message-box"></div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyACJNS14gHU4yf3fy3L5lb290QJB9wz72w",
+        authDomain: "blog-70675.firebaseapp.com",
+        projectId: "blog-70675",
+        storageBucket: "blog-70675.appspot.com",
+        messagingSenderId: "1004407170755",
+        appId: "1:1004407170755:web:a1fe24f077b9af79fba476",
+        measurementId: "G-XHS6FC39Y8"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        db.settings({
+            timestampsInSnapshots: true
+        })
+    </script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

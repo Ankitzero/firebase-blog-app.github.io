@@ -1,0 +1,191 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2%;
+    background-color: #FBFAFC;
+}
+.nav-logo {
+    font-size: 26px;
+    color: coral;
+    font-weight: bolder;
+
+}
+.nav-logo:hover {
+    cursor: pointer;
+}
+.nav-links .nav-links-link {
+    display: inline-block;
+    margin-right: 4px;
+}
+.nav-links-link:hover {
+    color: coral;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* log in box */
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% 0px;
+    padding: 20px;
+}
+.login input, button{
+    width: 300px;
+    height: 30px;
+    margin: 2px 0px;
+    font-size: 15px;
+    border: 0px;
+}
+.login input {
+    border-bottom: 1px solid;
+}
+.login input:hover {
+    border-bottom: 2px solid green;
+}
+.login button {
+    background-color: coral;
+    color: white;
+}
+.login button:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    color: black;
+}
+.login header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 2%;
+    text-decoration: underline;
+}
+.login textarea {
+    width: 300px;
+    height: 100px;
+    font-size: 15px;
+    margin: 2px 0px;
+    resize: none;
+}
+/* blog box */
+.blog-box {
+    display: flex;
+    margin: 1% 20%;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #FBFAFC;
+    box-shadow: 0px 2px 5px lightgray;
+    padding: 2%;
+}
+.blog-heading {
+    font-size: 20px;
+    margin: 1% 0px;
+}
+.blog-heading:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.blog-author {
+    color: gray;
+}
+/* loader */
+.loader {
+    display: none;
+	position: fixed;
+  bottom: 2%;
+  right: 1%;
+  border: 6px solid lightgray;
+  border-radius: 50%;
+  border-top: 6px solid black;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* blog in details */
+.blog-in-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2% 20%;
+}
+.blog-in-details-heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 2% 2% 3% 2%;
+    text-decoration: underline;
+}
+.delete-button {
+    width: 100px;
+    background-color: white;
+    box-shadow: 2px 2px 20px lightgray;
+    margin-top: 2%;
+}
+.delete-button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 8px lightgray;
+}
+/* drop down menu */
+.dropbtn {
+    color: black;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dd {
+      padding: 5%;
+      margin: 1% 0px;
+  }
+  .dropdown-content a:hover {text-decoration: underline;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+      text-decoration: underline;
+  }
+  /* message box */
+  .message-box {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    padding: 1%;
+    background: black;
+    color: white;
+    opacity: 0.7;
+  }
