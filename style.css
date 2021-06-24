@@ -191,9 +191,12 @@
   }
 @media only screen and (max-width: 600px) {
   .blog-box {
-    margin: 1% 10px;
+    margin: 2% 10px;
   }
 .message-box {
 margin: 1px 5px;
+}
+.blog-in-details {
+margin: 2% 10px;
 }
 }
