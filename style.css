@@ -191,7 +191,7 @@
   }
 @media only screen and (max-width: 600px) {
   .blog-box {
-    margin: 1% 5%;
+    margin: 1% 10px;
   }
 .message-box {
 margin: 1px 5px;
